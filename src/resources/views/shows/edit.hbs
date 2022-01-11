@@ -1,0 +1,17 @@
+<div class="seach-from mt-4">
+    <form method="POST" action="/courses/{{course._id}}?_method=PUT">
+    <div class="form-group">
+        <label for="seach-input">Tên khóa học</label>
+        <input type="text" name="name" class="form-control" id="seach-input" value="{{course.name}}"  placeholder="Nhập tên">
+    </div>
+    <div class="form-group">
+        <label for="gender-input">Mô tả</label>
+        <input type="text" name="description" class="form-control" value="{{course.description}}" id="seach-input"  placeholder="Nhập mô tả">
+    </div>
+    <div class="form-group">
+        <label for="gender-input">Hình ảnh</label>
+        <input type="text"  value="{{course.image}}" name="image" class="form-control" id="seach-input"  placeholder="Nhập link">
+    </div>
+    <button type="submit" class="btn btn-primary">Lưu Lại</button>
+    </form>
+</div>
